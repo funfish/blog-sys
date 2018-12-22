@@ -41,16 +41,16 @@ module.exports = withCSS(Object.assign({},
       const postList = postListResponse.data || [];
 
       await Promise.all(postList.map(async (item, index) => {
-        const data = await Home.indexList({ params: { title: item.title } });
-        result[`${!debug ? '/blog-sys' : ''}/post/${item.title}`] = {
+        const data = await Home.postContent({ params: { title: item.title } });
+        result[`/post/${item.title}`] = {
           page: '/Post/Post',
           query: data
         }
       }));
       
-      result[!debug ? '/blog-sys' : '/blog-sys'] = { 
+      result['/'] = { 
         page: '/Index/Index', 
-        query: postList 
+        query: postListResponse 
       }
       
       return result
