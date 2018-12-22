@@ -1,0 +1,35 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+.post-article {
+  line-height: 1.5em;
+}
+.post-article code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+.post-article .hljs code {
+  padding: 0;
+  background-color: inherit;
+  font-size: inherit;
+}
+.post-article blockquote {
+  margin: 0 0 16px 0;
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+.post-article a {
+  color: #0366d6;
+  text-decoration: none;
+}
