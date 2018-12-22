@@ -15,7 +15,7 @@ const Banner = props => {
         isIndex || bannerUrl ? (
           <header
             style={{
-              backgroundImage: isIndex ? 'url(/static/snowfield.jpg)' : `url(${bannerUrl})`,
+              backgroundImage: isIndex ? `url(${process.env.BACKEND_URL}/static/snowfield.jpg)` : `url(${bannerUrl})`,
               backgroundSize: isIndex ? 'cover' : 'contain'
             }}
             className={styles.banner}

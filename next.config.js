@@ -42,14 +42,14 @@ module.exports = withCSS(Object.assign({},
 
       await Promise.all(postList.map(async (item, index) => {
         const data = await Home.indexList({ params: { title: item.title } });
-        result[`/post/${item.title}`] = {
+        result[`${!debug ? '/blog-sys' : ''}/post/${item.title}`] = {
           page: '/Post/Post',
           query: data
         }
       }));
       
-      result['/'] = { 
-        page: "/Index/Index", 
+      result[!debug ? '/blog-sys' : '/blog-sys'] = { 
+        page: '/Index/Index', 
         query: postList 
       }
       

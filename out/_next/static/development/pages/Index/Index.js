@@ -26,7 +26,7 @@ var Banner = function Banner(props) {
       createTimeEN = props.createTimeEN;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, isIndex || bannerUrl ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
     style: {
-      backgroundImage: isIndex ? 'url(/static/snowfield.jpg)' : "url(".concat(bannerUrl, ")"),
+      backgroundImage: isIndex ? "url(".concat("", "/static/snowfield.jpg)") : "url(".concat(bannerUrl, ")"),
       backgroundSize: isIndex ? 'cover' : 'contain'
     },
     className: _Banner_less__WEBPACK_IMPORTED_MODULE_2___default.a.banner
