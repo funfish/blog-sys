@@ -21,7 +21,7 @@ export default class NiDocument extends Document {
           />
           <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
           <link rel="apple-touch-icon" href="/static/touch-icon.png" />
-          <link rel="icon" href="/static/avatar.jpg" />
+          <link rel="icon" href={`${process.env.BACKEND_URL}/static/avatar.jpg`} />
           <meta property="og:title" content={title} />
           <meta
             property="og:description"
