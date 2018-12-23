@@ -16,7 +16,7 @@ module.exports = withCSS(Object.assign({},
   {
     cssModules: false,
     assetPrefix: !debug ? '/blog-sys/' : '',
-    async exportPathMap() {
+    async exportPathMap () {
       if (debug) return;
       const result = {};
       // fetch 报错 手动狗头
@@ -39,7 +39,6 @@ module.exports = withCSS(Object.assign({},
       // }
       const postListResponse = await Home.indexList();
       const postList = postListResponse.data || [];
-
       await Promise.all(postList.map(async (item, index) => {
         const data = await Home.postContent({ params: { title: item.title } });
         result[`/post/${item.title}`] = {
@@ -52,7 +51,6 @@ module.exports = withCSS(Object.assign({},
         page: '/Index/Index', 
         query: postListResponse 
       }
-      
       return result
     },    
   }
