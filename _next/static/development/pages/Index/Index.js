@@ -10062,7 +10062,6 @@ function (_PureComponent) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Banner_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        title: "funfish\u7684\u575A\u5BA2",
         isIndex: true
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: _Index_less__WEBPACK_IMPORTED_MODULE_6___default.a.postListWrapper
